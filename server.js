@@ -31,6 +31,9 @@ app.use('/bands', bandsController)
 // EVENT CONTROLLER 
 const eventsController = require('./controllers/events_controller')
 app.use('/events', eventsController)
+// STAGE CONTROLLER
+const stagesController = require('./controllers/stages_controller')
+app.use('/stages', stagesController)
 
 
 // LISTEN
