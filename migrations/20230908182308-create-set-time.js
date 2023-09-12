@@ -10,23 +10,15 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       event_id: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.SMALLINT,
         allowNull: false,
-        references: {
-          model: 'events',
-          key: 'event_id'
-        }
       },
       band_id: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.SMALLINT,
         allowNull: false,
-        references: {
-          model: 'bands',
-          key: 'band_id'
-        }
       },
       stage_id: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.SMALLINT,
         allowNull: false,
       },
       start_time: {
